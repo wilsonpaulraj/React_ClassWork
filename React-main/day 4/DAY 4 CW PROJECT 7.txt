@@ -1,0 +1,46 @@
+Form:
+Index.js
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+// import App from './App';
+// import reportWebVitals from './reportWebVitals';
+import Hello from './App';
+import Home from './components/Main/home';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    {/* <App /> */}
+    <Hello />
+    {/* <Home isPass={true}/> */}
+
+  </React.StrictMode>
+);
+
+App.js
+import logo from './logo.svg';
+import './App.css';
+
+const Hello = ()=>{
+  return (
+    <div>
+        <form>
+          <table>
+            <tr><td>Name:</td><td><input type="/" name="name"/></td>
+            </tr>
+            <tr><td>Email</td><td><input type="email"/></td>
+            </tr>
+            <tr><td>Feedback</td><td><input type="range"/></td>
+            </tr>
+            <tr><td><button class="submit">Submit</button></td>
+            </tr>
+          </table>
+        </form>
+      </div>
+  );
+
+}
+export default Hello;
+
+
